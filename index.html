@@ -1,0 +1,63 @@
+<! DOCTYPE html> 
+
+<html>
+
+	<head>
+
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+
+		
+
+	</head>
+
+	<body>
+
+	
+
+		<div class="contenedor-formulario">
+
+		<form action="./procesaFormulario.pho" id="form">
+
+			<fieldset>
+
+				<h1>Create Account</h1>
+
+				<label for="name">Nombre</label><br>
+
+					<input type="text" id="name" pattern="[a-zA-Z\s]+" required><br><br>
+					
+					<i class="formulario__Validacion-estado fa-regular fa-circle-xmark"></i>	
+
+				<label for="email">Email</label><br>
+
+					<input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+	
+
+				<label for="clave">Clave</label><br>
+
+					<input type="password" required id="password" maxlength="8" required><br><br>
+
+				<label for="confirmpassword">Confirme su clave</label><br>
+
+					<input type="password" required id="confirmpassword" maxlength="8" required><br><br>
+
+				<div id="validation-message"></div>
+					
+			 	<div class="btn-container">
+
+				<button type="submit" onclick="alert ('Inscripcion correcta');">Enviar</button>
+			
+				<br>
+				<br>
+
+			</fieldset>
+
+
+		</form>
+
+	</div>
+
+	</body
+
+
+</html>
